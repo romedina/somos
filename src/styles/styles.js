@@ -1,13 +1,11 @@
 import * as ColorSystem from './colorSystem';
 
-
-
 export const landingStyles = {
     mainContainer: {
         height: '100vh',
-        backgroundColor: ColorSystem.regularBlue 
+        backgroundColor: ColorSystem.regularBlue
     },
-    circleStdWhite: {
+    whiteFont: {
         color: ColorSystem.white
-    }
+    },
 } 
