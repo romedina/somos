@@ -50,9 +50,10 @@ export const Landing = () => {
     return (
         <React.Fragment>
             <Grid container className={classes.mainContainer} justify='center' alignItems='center'>
-                <Grid item>
+                <Grid item> 
                     <ThemeProvider theme={typeCSBold}>
                     <CssBaseline />
+
                     <Typography variant='h1' className={classes.whiteFont} display='inline'>SOM(</Typography>
                     <ThemeProvider theme={typeRockSalt}>
                         <CssBaseline />
