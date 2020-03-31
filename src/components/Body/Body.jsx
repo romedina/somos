@@ -18,7 +18,7 @@ export const Body = () => {
                 <CssBaseline />
                 {/* Sections */}
                 <Landing />
-                <Iniciativa/>
+                {/* <Iniciativa/> */}
                 <Productores/>
                 <Team/>
                 <Services/>
