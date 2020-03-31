@@ -88,8 +88,8 @@ export const Landing = () => {
                     </Grid>
 
                     <Grid item xs={12}>
-                        <Box height='80vh' pt={'15%'} pl={10}>
-                            <Grid container justify='center' alignItems='center'>
+                        <Box height='80vh' pl={10}>
+                            <Grid container style={{height:'100%'}} justify='center' alignItems='center'>
                                 <Grid item xs>
                                     <ThemeProvider theme={typeCSBold}>
                                         <CssBaseline />
