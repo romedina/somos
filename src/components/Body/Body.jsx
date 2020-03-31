@@ -5,6 +5,9 @@ import { typeCSBook } from '../../styles/typeTheme';
 import { Landing } from '../Landing/landing';
 import { Iniciativa } from '../Iniciativa/Iniciativa';
 import {Productores} from '../Productores/productores';
+import {Team} from '../Team/team';
+import {Services} from '../Services/services';
+import {Benefits} from '../Benefits/benefits';
 
 export const Body = () => {
 
@@ -16,6 +19,10 @@ export const Body = () => {
                 <Landing />
                 <Iniciativa/>
                 <Productores/>
+                <Team/>
+                <Services/>
+                <Benefits/>
+
             </ThemeProvider>
         </React.Fragment>
     )

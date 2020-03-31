@@ -18,6 +18,8 @@ import RockSaltWoff from '../fonts/RockSalt.woff';
 import RockSaltWoff2 from '../fonts/RockSalt.woff2';
 import RockSaltSvg from '../fonts/RockSalt.svg';
 
+import * as ColorSystem from './colorSystem';
+
 const CircularStdBook = {
     fontFamily: 'CircularStdBook',
     fontStyle: 'normal',
@@ -61,6 +63,7 @@ const RockSalt = {
 export const typeCSBook = createMuiTheme({
     typography: {
         fontFamily: 'CircularStdBook, Arial',
+        color: ColorSystem.lightBlack
     },
     overrides: {
         MuiCssBaseline: {
@@ -74,6 +77,7 @@ export const typeCSBook = createMuiTheme({
 export const typeCSBold = createMuiTheme({
     typography: {
         fontFamily: 'CircularStdBold, Arial',
+        color: ColorSystem.lightBlack
     },
     overrides: {
         MuiCssBaseline: {
@@ -87,6 +91,7 @@ export const typeCSBold = createMuiTheme({
 export const typeRockSalt = createMuiTheme({
     typography: {
         fontFamily: 'RockSalt, Arial',
+        color: ColorSystem.lightBlack
     },
     overrides: {
         MuiCssBaseline: {

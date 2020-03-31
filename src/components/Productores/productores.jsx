@@ -56,13 +56,13 @@ export const Productores = () => {
                 <Grid
                     container
                     justify='flex-start'
-                    alignItems='flex-start'
+                    alignItems='flex-end'
                     style={{ height: '100%' }}>
-                    <Grid item lg={3}>
-                        <Grid container>
+                    <Grid item xs={6} md={5} lg={4}>
+                        <Grid container justify='flex-start' alignItems='flex-start'>
                             <Grid item xs={12}>
-                                <Box className={classes.blueContainer} p={5}>
-                                    <Typography variant='subtitle 1' className={classes.whiteFont}>{`${profLabels[currentBg]}`}</Typography>
+                                <Box className={classes.blueContainer} p={4}>
+                                    <Typography variant='subtitle1' className={classes.whiteFont}>{`${profLabels[currentBg]}`}</Typography>
                                 </Box>                                
                             </Grid>
                         </Grid>
