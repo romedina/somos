@@ -8,6 +8,7 @@ import {Productores} from '../Productores/productores';
 import {Team} from '../Team/team';
 import {Services} from '../Services/services';
 import {Benefits} from '../Benefits/benefits';
+import {Footer} from '../Footer/footer';
 
 export const Body = () => {
 
@@ -22,6 +23,7 @@ export const Body = () => {
                 <Team/>
                 <Services/>
                 <Benefits/>
+                <Footer/>
 
             </ThemeProvider>
         </React.Fragment>

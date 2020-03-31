@@ -137,3 +137,12 @@ export const benefitsStyles={
         color:ColorSystem.white
     }
 }
+
+export const footerStyles={
+    mainContainer:{
+        backgroundColor: ColorSystem.black
+    },
+    whiteType:{
+        color:ColorSystem.white
+    },
+}
