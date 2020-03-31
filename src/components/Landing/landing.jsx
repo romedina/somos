@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Grid, Typography, makeStyles, Button, ThemeProvider, CssBaseline, Box } from '@material-ui/core';
+import { Hidden, Grid, Typography, makeStyles, Button, ThemeProvider, CssBaseline, Box } from '@material-ui/core';
 import { landingStyles } from '../../styles/styles'
 import { textOptions } from '../../constants/textOptions/textOptions';
 import { typeRockSalt, typeCSBold } from '../../styles/typeTheme';
@@ -51,7 +51,7 @@ export const Landing = () => {
 
     return (
         <React.Fragment>
-            <Box height='100vh' className={classes.mainContainer}>
+            <Box  className={classes.mainContainer}>
                 <Grid container justify='center' alignItems='flex-start'>
                     <Grid item xs={12}>
                         <Grid container justify='center' alignItems='center'>
@@ -89,25 +89,47 @@ export const Landing = () => {
 
                     <Grid item xs={12}>
                         <Box height='80vh' pl={10}>
-                            <Grid container style={{height:'100%'}} justify='center' alignItems='center'>
-                                <Grid item xs>
-                                    <ThemeProvider theme={typeCSBold}>
-                                        <CssBaseline />
-                                        <Typography align='right' className={classes.whiteFont} variant='h1'>SOM(</Typography>
-                                    </ThemeProvider>
-                                </Grid>
-                                <Grid item xs>
-                                    <ThemeProvider theme={typeRockSalt}>
-                                        <CssBaseline />
-                                        <Typography align='center' className={classes.whiteFont} variant='h1'>{currentWord}</Typography>
-                                    </ThemeProvider>
-                                </Grid>
-                                <Grid item xs>
-                                    <ThemeProvider theme={typeCSBold}>
-                                        <CssBaseline />
-                                        <Typography align='left' className={classes.whiteFont} variant='h1'>)S</Typography>
-                                    </ThemeProvider>
-                                </Grid>
+                            <Grid container style={{ height: '100%' }} justify='center' alignItems='center'>
+                                <Hidden mdDown>
+                                    <Grid item xs>
+                                        <ThemeProvider theme={typeCSBold}>
+                                            <CssBaseline />
+                                            <Typography align='right' className={classes.whiteFont} variant='h1'>som(</Typography>
+                                        </ThemeProvider>
+                                    </Grid>
+                                    <Grid item xs>
+                                        <ThemeProvider theme={typeRockSalt}>
+                                            <CssBaseline />
+                                            <Typography align='center' className={classes.whiteFont} variant='h3'>{currentWord}</Typography>
+                                        </ThemeProvider>
+                                    </Grid>
+                                    <Grid item xs>
+                                        <ThemeProvider theme={typeCSBold}>
+                                            <CssBaseline />
+                                            <Typography align='left' className={classes.whiteFont} variant='h1'>)s</Typography>
+                                        </ThemeProvider>
+                                    </Grid>
+                                </Hidden>
+                                <Hidden mdUp>
+                                    <Grid item xs>
+                                        <ThemeProvider theme={typeCSBold}>
+                                            <CssBaseline />
+                                            <Typography align='right' className={classes.whiteFont} variant='h3'>som(</Typography>
+                                        </ThemeProvider>
+                                    </Grid>
+                                    <Grid item xs>
+                                        <ThemeProvider theme={typeRockSalt}>
+                                            <CssBaseline />
+                                            <Typography align='center' className={classes.whiteFont} variant='h5'>{currentWord}</Typography>
+                                        </ThemeProvider>
+                                    </Grid>
+                                    <Grid item xs>
+                                        <ThemeProvider theme={typeCSBold}>
+                                            <CssBaseline />
+                                            <Typography align='left' className={classes.whiteFont} variant='h3'>)s</Typography>
+                                        </ThemeProvider>
+                                    </Grid>
+                                </Hidden>
                             </Grid>
                         </Box>
                     </Grid>

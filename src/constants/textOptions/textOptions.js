@@ -1,7 +1,10 @@
 export const textOptions = [
     'productores',
-    'vendedores',
-    'trabajadores',
-    'personas',
-    'mexicanos'
+    'empresarios',
+    'restauranteros',
+    'médicos',
+    'nutriólogos',
+    'distribuidores',
+    'estilistas',
+    'emprendedores'
 ]

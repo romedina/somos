@@ -146,3 +146,9 @@ export const footerStyles={
         color:ColorSystem.white
     },
 }
+
+export const iniciativaStyles={
+    blueType:{
+        color:ColorSystem.regularBlue
+    }
+}

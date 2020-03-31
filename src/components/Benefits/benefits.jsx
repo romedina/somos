@@ -15,7 +15,7 @@ export const Benefits = () => {
     const renderBullets = () => {
         return (
             benefitsItems.map(element => {
-                console.log('element.icon', element.icon)
+                // console.log('element.icon', element.icon)
                 return (
                     <Grid key={element.description} item xs={12} md={6} lg={4}>
                         <IconBullet
