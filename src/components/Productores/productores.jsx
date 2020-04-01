@@ -52,6 +52,7 @@ export const Productores = () => {
 
     return (
         <React.Fragment>
+            <div id='tuProyecto'>
             <Box className={professionals[currentBg]} height='100vh'>
                 <Grid
                     container
@@ -69,6 +70,7 @@ export const Productores = () => {
                     </Grid>
                 </Grid>
             </Box>
+            </div>
         </React.Fragment>
     )
 }

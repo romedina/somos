@@ -1,11 +1,17 @@
 import * as ColorSystem from './colorSystem';
 
 export const landingStyles = {
+    '@keyframes loop': {
+        from: { transform: 'rotate(0deg)' },
+        to: { transform: 'rotate(359deg)' }
+    },
     circularLogo: {
         width: 80,
         height: 80,
         position: 'relative',
         left: '50%',
+        animation: '$loop 7s infinite',
+        
     },
     downArrow: {
         width: 35,

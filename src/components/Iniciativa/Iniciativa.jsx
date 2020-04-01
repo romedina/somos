@@ -4,7 +4,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import MobileStepper from '@material-ui/core/MobileStepper';
 import Button from '@material-ui/core/Button';
 import { iniciativaStyles } from '../../styles/styles';
-import { typeCSBold,typeRockSalt } from '../../styles/typeTheme';
+import { typeCSBold, typeRockSalt } from '../../styles/typeTheme';
 
 const useStyles = makeStyles({
     root: {
@@ -20,8 +20,8 @@ const screenText = [
     'Todos los proyectos que creamos están respaldados por la experiencia y el conocimiento de 22 profesionales expertos cada uno en su campo de acción. Juntos dedicamos nuestros esfuerzos para aportar la mejor solución de acuerdo al reto particular que presentan nuestros clientes.'
 ]
 
-const somosText= [
-    ' DISEÑADORES ' ,
+const somosText = [
+    ' DISEÑADORES ',
     ' CONTEXTO ',
     ' EXPERIENCIA '
 ]
@@ -52,12 +52,12 @@ export function Iniciativa() {
                             </Grid>
                             <Grid item xs={12}>
                                 <ThemeProvider theme={typeCSBold}>
-                                    <Typography className={classes.blueType} variant='h2' display='inline'>som(</Typography>
+                                    <Typography className={classes.blueType} variant='h4' display='inline'>som(</Typography>
                                     <ThemeProvider theme={typeRockSalt}>
-                                        <CssBaseline/>
-                                        <Typography paragraph className={classes.blueType} variant='h6' display='inline'>{somosText[activeStep]}</Typography>
+                                        <CssBaseline />
+                                        <Typography paragraph className={classes.blueType} variant='subtitle1' display='inline'>{somosText[activeStep]}</Typography>
                                     </ThemeProvider>
-                                    <Typography className={classes.blueType} variant='h2' display='inline'>)s</Typography>
+                                    <Typography className={classes.blueType} variant='h4' display='inline'>)s</Typography>
                                 </ThemeProvider>
                             </Grid>
                             <Grid item xs={12} md={10}>
@@ -78,12 +78,12 @@ export function Iniciativa() {
                             </Grid>
                             <Grid item xs={12}>
                                 <ThemeProvider theme={typeCSBold}>
-                                    <Typography className={classes.blueType} variant='h2' display='inline'>som(</Typography>
+                                    <Typography className={classes.blueType} variant='h4' display='inline'>som(</Typography>
                                     <ThemeProvider theme={typeRockSalt}>
-                                        <CssBaseline/>
-                                        <Typography className={classes.blueType} variant='h6' display='inline'>{somosText[activeStep]}</Typography>
+                                        <CssBaseline />
+                                        <Typography className={classes.blueType} variant='subtitle1' display='inline'>{somosText[activeStep]}</Typography>
                                     </ThemeProvider>
-                                    <Typography className={classes.blueType} variant='h2' display='inline'>)s</Typography>
+                                    <Typography className={classes.blueType} variant='h4' display='inline'>)s</Typography>
                                 </ThemeProvider>
                             </Grid>
                             <Grid item xs={12} md={10}>
@@ -103,12 +103,12 @@ export function Iniciativa() {
                             </Grid>
                             <Grid item xs={12}>
                                 <ThemeProvider theme={typeCSBold}>
-                                    <Typography className={classes.blueType} variant='h2' display='inline'>som(</Typography>
+                                    <Typography className={classes.blueType} variant='h4' display='inline'>som(</Typography>
                                     <ThemeProvider theme={typeRockSalt}>
-                                        <CssBaseline/>
-                                        <Typography className={classes.blueType} variant='h6' display='inline'>{somosText[activeStep]}</Typography>
+                                        <CssBaseline />
+                                        <Typography className={classes.blueType} variant='subtitle1' display='inline'>{somosText[activeStep]}</Typography>
                                     </ThemeProvider>
-                                    <Typography className={classes.blueType} variant='h2' display='inline'>)s</Typography>
+                                    <Typography className={classes.blueType} variant='h4' display='inline'>)s</Typography>
                                 </ThemeProvider>
                             </Grid>
                             <Grid item xs={12} md={10}>
@@ -120,45 +120,46 @@ export function Iniciativa() {
                     </React.Fragment>
                 )
             default:
-                return(<span/>)
+                return (<span />)
         }
     }
 
     return (
         <React.Fragment>
-            <Box pt={10} pb={8}>
-                <Grid container style={{ height: '100%' }} justify='center' alignItems='flex-start'>
-                    <Grid item>
-                        <Grid container justify='center' alignItems='center'>
-                            <Grid item xs={11} md={8} lg={6}>
-                                {renderScreen()}
+            <div id='iniciativa'>
+                <Box minHeight={'80vh'} pt={15}>
+                    <Grid container style={{ height: '100%' }} justify='center' alignItems='center'>
+                        <Grid item xs={12}>
+                            <Grid style={{ height: '100%' }} container justify='center' alignItems='center'>
+                                <Grid item xs={11} md={8} lg={6}>
+                                    {renderScreen()}
+                                </Grid>
                             </Grid>
                         </Grid>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <MobileStepper
-                            variant="dots"
-                            steps={3}
-                            position="static"
-                            activeStep={activeStep}
-                            className={classes.root}
-                            nextButton={
-                                <Button size="small" onClick={handleNext} disabled={activeStep === screenText.length - 1}>
-                                    Next
+                        <Grid item xs={12}>
+                            <MobileStepper
+                                variant="dots"
+                                steps={3}
+                                position="static"
+                                activeStep={activeStep}
+                                className={classes.root}
+                                nextButton={
+                                    <Button size="small" onClick={handleNext} disabled={activeStep === screenText.length - 1}>
+                                        Next
                                 {theme.direction === 'rtl' ? <span>{'<'}</span> : <span>{'>'}</span>}
-                                </Button>
-                            }
-                            backButton={
-                                <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-                                    {theme.direction === 'rtl' ? <span>{'>'}</span> : <span>{'<'}</span>}
+                                    </Button>
+                                }
+                                backButton={
+                                    <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+                                        {theme.direction === 'rtl' ? <span>{'>'}</span> : <span>{'<'}</span>}
                                     Back
                                 </Button>
-                            }
-                        />
+                                }
+                            />
+                        </Grid>
                     </Grid>
-                </Grid>
-            </Box>
-
+                </Box>
+            </div>
 
         </React.Fragment >
     );
