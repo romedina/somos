@@ -56,7 +56,7 @@ export const professionals = theme => ({
         to: { opacity: 1 }
     },
     gardener_bg: {
-        backgroundImage: `url('https://firebasestorage.googleapis.com/v0/b/somos-7dc78.appspot.com/o/Backgrounds%2Fjardinera.jpeg?alt=media&token=ae5f6d72-fdaa-4cba-b5ea-e13d00efcd64')`,
+        backgroundImage: `url('https://firebasestorage.googleapis.com/v0/b/somos-7dc78.appspot.com/o/Backgrounds%2Fjardinera.jpg?alt=media&token=140181c0-c5a2-4c9a-8013-2fe6cec1dc6e')`,
         backgroundRepeat: 'no-repeat',
         [theme.breakpoints.down('sm')]: {
             backgroundSize: 'contain',
@@ -79,7 +79,7 @@ export const professionals = theme => ({
         to: { opacity: 1 }
     },
     doctor_bg: {
-        backgroundImage: `url('https://firebasestorage.googleapis.com/v0/b/somos-7dc78.appspot.com/o/Backgrounds%2Fdoctor.jpeg?alt=media&token=03e0b371-de75-4b66-9413-a2d90f8c30da')`,
+        backgroundImage: `url('https://firebasestorage.googleapis.com/v0/b/somos-7dc78.appspot.com/o/Backgrounds%2Fdoctor.jpg?alt=media&token=df8cf862-365e-4292-8531-5a4e16a7f12c')`,
         backgroundRepeat: 'no-repeat',
         [theme.breakpoints.down('sm')]: {
             backgroundSize: 'contain',
@@ -101,7 +101,7 @@ export const professionals = theme => ({
         to: { opacity: 1 }
     },
     entrepreneur_bg: {
-        backgroundImage: `url('https://firebasestorage.googleapis.com/v0/b/somos-7dc78.appspot.com/o/Backgrounds%2Fchef.jpeg?alt=media&token=1512d9fa-289e-4435-b3c6-0ac78cdba4d4')`,
+        backgroundImage: `url('https://firebasestorage.googleapis.com/v0/b/somos-7dc78.appspot.com/o/Backgrounds%2Fchef.jpg?alt=media&token=bbe2197e-f410-451a-9de4-245103e11115')`,
         backgroundRepeat: 'no-repeat',
         [theme.breakpoints.down('sm')]: {
             backgroundSize: 'contain',
@@ -123,7 +123,7 @@ export const professionals = theme => ({
         to: { opacity: 1 }
     },
     sales_bg: {
-        backgroundImage: `url('https://firebasestorage.googleapis.com/v0/b/somos-7dc78.appspot.com/o/Backgrounds%2Fcosturera.jpeg?alt=media&token=033f3c54-2a11-4c07-8a96-99aad8a8c2e8')`,
+        backgroundImage: `url('https://firebasestorage.googleapis.com/v0/b/somos-7dc78.appspot.com/o/Backgrounds%2Fcosturera.jpg?alt=media&token=b31446d7-db1e-4434-a694-7fd3bf1de7a7')`,
         backgroundRepeat: 'no-repeat',
         [theme.breakpoints.down('sm')]: {
             backgroundSize: 'contain',
