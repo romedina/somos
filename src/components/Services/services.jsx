@@ -24,7 +24,7 @@ export function Services() {
 
     return (
         <React.Fragment>
-            <Box height={'100vh'}>
+            <Box >
                 <Grid
                     style={{ height: '100%' }}
                     container
@@ -32,7 +32,7 @@ export function Services() {
                     alignItems='center'
                 >
                     <Grid item xs={11} lg={8}>
-                        <Box pt={10} pb={8}>
+                        <Box pt={{xs:10,lg:40}} pb={{xs:8,lg:35}}>
                             <Grid container justify='flex-end' >
                                 <Grid item xs={12}>
                                     <ThemeProvider theme={typeCSBold}>
