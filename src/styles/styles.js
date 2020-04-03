@@ -155,6 +155,12 @@ export const teamStyles = {
     divider: {
         borderTop: `2px solid ${ColorSystem.regularBlue}`
     },
+    blueType:{
+        color: ColorSystem.regularBlue
+    },
+    link:{
+        textDecoration:'none',
+    },
     tlBg: {
         backgroundImage: `url('https://firebasestorage.googleapis.com/v0/b/somos-7dc78.appspot.com/o/Backgrounds%2Ftipos.jpg?alt=media&token=7a1ab2c1-e88d-41b1-8706-581bc711f530')`,
         backgroundRepeat: 'no-repeat',

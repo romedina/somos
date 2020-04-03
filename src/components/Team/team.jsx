@@ -38,10 +38,14 @@ export const Team = () => {
                                         <img className={classes.imgStd} src={tiposLibres} width={'30%'} alt='TiposLibres logo' />
                                         <Typography variant='h6'>
                                             Durante 30 años ha focalizado el talento de sus integrantes a la creación de marcas, estrategias de comunicación y publicidad desde Querétaro para todo el mundo.
-                                    </Typography>
+                                        </Typography>
                                         <Box pt={3}>
                                             <div className={classes.tlBg}></div>
                                         </Box>
+                                        <br/>
+                                        <a target='_blank' href='https://tiposlibres.com/' rel="noopener noreferrer" className={classes.link}>
+                                            <Typography align='right' variant='h5' className={classes.blueType}>tiposlibres.com</Typography>
+                                        </a>
                                     </Grid>
                                     <Grid item xs={12} lg={6}>
                                         <img className={classes.imgStd} src={ard} width={'20%'} alt='TiposLibres logo' />
@@ -53,7 +57,7 @@ export const Team = () => {
                                         </Box>
                                     </Grid>
                                     <Grid item xs={12}>
-                                        <Box p={{xs:1,lg:10}}>
+                                        <Box p={{ xs: 1, lg: 10 }}>
                                             <ThemeProvider theme={typeCSBold}>
                                                 <CssBaseline />
                                                 <Typography className={classes.h4Title} align='center' variant='h5'>

@@ -14,7 +14,7 @@ export const Body = () => {
 
     return (
         <React.Fragment>
-            <Grid container justify='center' alignItems='center' style={{width:'100vw',overflow:'hidden'}}>
+            <Grid container justify='center' alignItems='center'>
                 <Grid item xs={12}>
                     <ThemeProvider theme={typeCSBook}>
                         <CssBaseline />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Typography, ThemeProvider, CssBaseline, Hidden } from '@material-ui/core';
+import { Grid, Typography, ThemeProvider, CssBaseline, Hidden,Box } from '@material-ui/core';
 import Modal from '@material-ui/core/Modal';
 import * as ColorSystem from '../../styles/colorSystem';
 import { typeCSBook } from '../../styles/typeTheme'
@@ -30,7 +30,11 @@ const useStyles = makeStyles(theme => ({
     color: 'white'
   },
   blueType: {
-    color: ColorSystem.regularBlue
+    color: ColorSystem.regularBlue,
+  },
+  link:{
+    textDecoration:'none',
+    color: ColorSystem.regularBlue,
   }
 }));
 
@@ -47,6 +51,7 @@ export function ContactModal(props) {
       >
 
         <div style={modalStyle} className={classes.paper}>
+          <Box pt={2} pb={2}>
           <Grid container justify='center' alignItems='center'>
             <Grid item xs={10}>
               <Grid container justify='center' alignItems='center'>
@@ -57,7 +62,7 @@ export function ContactModal(props) {
                       <Typography gutterBottom align='center' className={classes.whiteType} variant='h2'>¡Si te sumas <strong>somos</strong> más!</Typography>
                     </Grid>
                     <Grid item xs={12}>
-                      <Typography align='center' className={classes.whiteType} variant='h4'>Escríbenos a <span className={classes.blueType}>hola@somos.work</span></Typography>
+                      <Typography align='center' className={classes.whiteType} variant='h4'>Escríbenos a <a className={classes.link} href="mailto:hola@somos.work"><span className={classes.blueType}>hola@somos.work</span></a></Typography>
                     </Grid>
                     <Grid item xs={12}>
                       <Typography align='center' className={classes.whiteType} variant='h4'>o mándanos un mensaje a:</Typography>
@@ -74,7 +79,7 @@ export function ContactModal(props) {
                       <Typography gutterBottom align='center' className={classes.whiteType} variant='h4'>¡Si te sumas <strong>somos</strong> más!</Typography>
                     </Grid>
                     <Grid item xs={12}>
-                      <Typography align='center' className={classes.whiteType} variant='h5'>Escríbenos a <span className={classes.blueType}>hola@somos.work</span></Typography>
+                      <Typography align='center' className={classes.whiteType} variant='h5'>Escríbenos a <a className={classes.link} href="mailto:hola@somos.work"><span className={classes.blueType}>hola@somos.work</span></a></Typography>
                     </Grid>
                     <Grid item xs={12}>
                       <Typography align='center' className={classes.whiteType} variant='h5'>o mándanos un mensaje a:</Typography>
@@ -87,6 +92,7 @@ export function ContactModal(props) {
               </Grid>
             </Grid>
           </Grid>
+          </Box>
         </div>
       </Modal>
     </div>
