@@ -123,19 +123,20 @@ export const Landing = () => {
                             <Grid item xs={12}>
                                 <img className={classes.downArrow} src={DownArrow} alt='contact whatsapp' />
                             </Grid>
-                            <Grid item xs={6}>
-                                <Box pl={5}>
-                                    <Typography align='left' className={classes.whiteFont} variant='subtitle1'> hola@somos.work</Typography>
-                                </Box>
+                            <Hidden mdDown>
+                                <Grid item xs={6}>
+                                    <Box pl={5}>
+                                        <Typography align='left' className={classes.whiteFont} variant='subtitle1'> hola@somos.work</Typography>
+                                    </Box>
 
-                            </Grid>
+                                </Grid>
 
-                            <Grid item xs={6}>
-                                <Box pr={5}>
-                                    <img className={classes.whatsappIcon} src={WhatsappIcon} alt='contact whatsapp' />
-                                </Box>
-
-                            </Grid>
+                                <Grid item xs={6}>
+                                    <Box pr={5}>
+                                        <img className={classes.whatsappIcon} src={WhatsappIcon} alt='contact whatsapp' />
+                                    </Box>
+                                </Grid>
+                            </Hidden>
 
 
                         </Grid>

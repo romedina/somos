@@ -32,7 +32,7 @@ export const Benefits = () => {
     return (
         <React.Fragment>
             <div id='beneficios'>
-                <Box className={classes.mainContainer} pt={10} pb={8}>
+                <Box className={classes.mainContainer} pt={{xs:10,lg:40}} pb={{xs:8,lg:35}} style={{minHeight:'100vh'}}>
                     <Grid
                         container
                         style={{ height: '100%' }}
