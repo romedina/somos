@@ -4,24 +4,35 @@ import CircularLogo from '../../assets/circularLogo.svg';
 import { typeCSBold } from '../../styles/typeTheme';
 import { landingStyles } from '../../styles/styles';
 import { Link } from 'react-scroll';
+import { ContactModal } from '../ContactModal/contactModal';
 
 const useStyles = makeStyles(landingStyles)
 
 export function Header() {
 
     const classes = useStyles();
-    const [isContactVisible, setIsContactVisible] = useState();
+    const [isContactVisible, setIsContactVisible] = useState(false);
+
+    const handleOpen = () => {
+        setIsContactVisible(true);
+    }
+
+    const handleClose = () => {
+        setIsContactVisible(false)
+    }
+
+    // {console.log(isContactVisible)}
 
     return (
         <React.Fragment>
-            <Grid container justify='center' alignItems='center'>
+            <Grid container justify='flex-start' alignItems='center'>
                 <ThemeProvider theme={typeCSBold}>
                     <CssBaseline />
-                    <Grid item xs={3} lg={3}>
+                    <Grid item xs={6} lg={3} xl={4}>
                         <img className={classes.circularLogo} src={CircularLogo} alt='logo' />
                     </Grid>
                     <Hidden mdDown>
-                        <Grid item xs={3} lg={6}>
+                        <Grid item xs={4} lg={5} xl={4}>
                             <Box p={5}>
                                 <Grid container justify='center' alignItems='center'>
                                     <Grid item xs md>
@@ -89,11 +100,19 @@ export function Header() {
                             </Box>
                         </Grid>
                     </Hidden>
-                    <Grid item lg={3}>
-                        <Box p={5}>
-                            <Button className={classes.whiteBtn} variant='outlined' size='large'>Contacto</Button>
-                        </Box>
+                    <Grid item xs={6} lg={4} xl={4}>
+                        <Grid container justify='flex-end' alignItems='center'>
+                            <Grid item xs={12}>
+                                <Box p={5}>
+                                    <Button onClick={handleOpen} className={classes.whiteBtn} variant='outlined' size='large'>Contacto</Button>
+                                </Box>
+                            </Grid>
+                        </Grid>
+
+
                     </Grid>
+                    <ContactModal open={isContactVisible} handleClose={handleClose} />
+
                 </ThemeProvider>
             </Grid>
         </React.Fragment>

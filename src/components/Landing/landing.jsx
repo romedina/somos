@@ -121,11 +121,7 @@ export const Landing = () => {
                     <Grid item xs={12}>
                         <Grid container justify='center' alignItems='center'>
                             <Grid item xs={12}>
-                                <Grid container justify='flex-end'>
-                                    <Grid item xs={12}>
-                                        <img className={classes.downArrow} src={DownArrow} alt='contact whatsapp' />
-                                    </Grid>
-                                </Grid>
+                                <img className={classes.downArrow} src={DownArrow} alt='contact whatsapp' />
                             </Grid>
                             <Grid item xs={6}>
                                 <Box pl={5}>

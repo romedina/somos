@@ -53,13 +53,13 @@ export const Productores = () => {
     return (
         <React.Fragment>
             <div id='tuProyecto'>
-            <Box className={professionals[currentBg]} height='100vh'>
+            <Box className={professionals[currentBg]}>
                 <Grid
                     container
                     justify='flex-start'
                     alignItems='flex-end'
                     style={{ height: '100%' }}>
-                    <Grid item xs={6} md={5} lg={4}>
+                    <Grid item xs={12} md={5} lg={4}>
                         <Grid container justify='flex-start' alignItems='flex-start'>
                             <Grid item xs={12}>
                                 <Box className={classes.blueContainer} p={4}>
