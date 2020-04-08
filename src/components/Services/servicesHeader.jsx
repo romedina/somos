@@ -1,6 +1,7 @@
 import React from 'react'
 import { styled } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
+import StarIconMaterial from '@material-ui/icons/Star';
 
 const ServicesHeader = (props) => {
   return (
@@ -17,24 +18,31 @@ const ServicesHeader = (props) => {
         </Box>
         <Box>
         <CircleSteep>3</CircleSteep>
+        <LatestCircleSteep>
+          <StarIconMaterial />
+        </LatestCircleSteep>
           Realizamos tu proyecto en tiempo record
           <VerticalLine />
         </Box>
       </Content>
     </Container>
-    
   )
 }
 
 export default ServicesHeader
 
 const Title = styled(Typography)({
-  fontSize: '3em',
+  fontSize: '3m',
   width: '100%',
   color: '#000',
   textAlign: 'left',
   marginBottom: '80px',
-  fontWeight: 'bold'
+  fontWeight: 'bold',
+  ['@media screen and (max-width:700px)']: {
+    fontSize: '2em',
+    textAlign: 'center'
+  }
+
 })
 
 const Container = styled('div')({
@@ -52,6 +60,10 @@ const Content = styled('div')({
   fontSize: '1.4em',
   fontFamily: 'CircularStdBook, Arial',
   flexWrap: "wrap",
+  ['@media screen and (max-width:700px)']: {
+    paddingLeft: '40px'
+  }
+
 })
 
 const Box = styled('div')({
@@ -63,7 +75,17 @@ const Box = styled('div')({
   position: 'relative',
   background: 'fff',
   borderLeft: '1px solid #fff',
-  borderBottom: '1px solid #fff'
+  borderBottom: '1px solid #fff',
+  ['@media screen and (max-width:700px)']: {
+    borderBottom: 'none',
+    width: '100%',
+    paddingLeft: '40px',
+    paddingTop: '10px',
+    paddingBottom: '50px',
+    '&:last-of-type': {
+      paddingBottom: '100px'
+    }
+  }
 })
 
 const CircleSteep = styled('div')({
@@ -80,7 +102,22 @@ const CircleSteep = styled('div')({
   justifyContent: "center",
   alignItems: "center",
   fontSize: "1.3em",
-  fontWeight: 'bold'
+  fontWeight: 'bold',
+  ['@media screen and (max-width:700px)']: {
+    width: "50px",
+    height: "50px",
+    top: '0px',
+    left: '-26px',
+  }
+})
+
+const LatestCircleSteep = styled(CircleSteep)({
+  display: 'none',
+  ['@media screen and (max-width:700px)']: {
+    display: 'flex',
+    bottom: '-10px!important',
+    top: 'auto',
+  }
 })
 
 const VerticalLine = styled('div')({
@@ -88,5 +125,9 @@ const VerticalLine = styled('div')({
   position: "absolute",
   borderLeft: "1px solid #fff",
   right: "0",
-  bottom: "-71px"
+  bottom: "-71px",
+  ['@media screen and (max-width:700px)']: {
+    display: 'none'
+  }
+
 })

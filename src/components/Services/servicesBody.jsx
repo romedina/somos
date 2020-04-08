@@ -117,11 +117,18 @@ const Content = styled('div')({
   margin: 'auto',
   fontFamily: 'CircularStdBook, Arial', 
   paddingLeft: '50px',
+  ['@media screen and (max-width:700px)']: {
+    paddingLeft: '20px'
+  }
+  
 })
 
 const Row = styled('div')({
   display: 'flex',
   justifyContent: 'center',
+  ['@media screen and (max-width:700px)']: {
+    flexDirection: 'column'
+  }
 })
 
 const Box = styled('div')({
@@ -129,6 +136,11 @@ const Box = styled('div')({
   boxSizing: 'border-box',
   borderRight: '1px solid #0449ff',
   padding: '35px 10px',
+  ['@media screen and (max-width:700px)']: {
+    border: 'none',
+    width: '100%',
+    padding: '10px',
+  }
 })
 
 const LastBox = styled(Box)({
@@ -150,6 +162,10 @@ const Starts = styled('div')({
   color: "#000",
   fontSize: "1.3em",
   padding: "38px",
+  ['@media screen and (max-width:700px)']: {
+    width: '80%',
+    padding: '20px 10px 50px 60px'
+  }
 })
 
 const StartIcon = styled('div')({
@@ -163,7 +179,11 @@ const StartIcon = styled('div')({
   color: "#fff",
   display: "flex",
   justifyContent: "center",
-  alignItems: "center"
+  alignItems: "center",
+  ['@media screen and (max-width:700px)']: {
+    top: '15px',
+    left: '10px',
+  }
 })
 
 const TitleContainer = styled('div')({
@@ -180,11 +200,18 @@ const Line = styled('div')({
   flex: "1 1 auto",
   borderBottom: "1px solid #d8d8d8",
   marginLeft: "10px",
-  marginBottom: "10px"
+  marginBottom: "10px",
+  ['@media screen and (max-width:700px)']: {
+    display: 'none'
+  }
+  
 })
 
 const Description = styled('div')({
   color: 'gray',
   fontSize: '1.7em',
-  width: '60%'
+  width: '60%',
+  ['@media screen and (max-width:700px)']: {
+    width: '100%'
+  }
 })
