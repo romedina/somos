@@ -32,7 +32,7 @@ const ServicesHeader = (props) => {
 export default ServicesHeader
 
 const Title = styled(Typography)({
-  fontSize: '3m',
+  fontSize: '3em',
   width: '100%',
   color: '#000',
   textAlign: 'left',
@@ -73,7 +73,6 @@ const Box = styled('div')({
   boxSizing: 'border-box',
   width: '25%',
   position: 'relative',
-  background: 'fff',
   borderLeft: '1px solid #fff',
   borderBottom: '1px solid #fff',
   ['@media screen and (max-width:700px)']: {

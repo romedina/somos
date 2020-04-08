@@ -95,7 +95,7 @@ const BodyServices = (props) => {
             <StartIcon>
               <StarIconMaterial/>
             </StartIcon>
-           Aprende asacar provecho de esta situación
+           Aprende a sacar provecho de esta situación
           </Starts>
         </Row>
       </Content>
