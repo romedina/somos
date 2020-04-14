@@ -19,7 +19,7 @@ const BodyServices = (props) => {
             <StartIcon>
               <StarIconMaterial/>
             </StartIcon>
-            Distínguete dela competencia
+            Distínguete de la competencia
           </Starts>
         </Row>
         <Row>
@@ -40,7 +40,7 @@ const BodyServices = (props) => {
         <Row>
           <Box>
             <TitleContainer>
-              <Title>Tienda en linea:</Title>
+              <Title>Tienda en línea:</Title>
               <Line />
             </TitleContainer>
             <Description>¿Tuviste que cerrar tu negocio?</Description>
