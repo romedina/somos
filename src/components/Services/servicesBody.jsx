@@ -25,7 +25,7 @@ const BodyServices = (props) => {
         <Row>
          <Box>
             <TitleContainer>
-              <Title>Pagina web:</Title>
+              <Title>Página web:</Title>
               <Line />
             </TitleContainer>
             <Description>¿Tus productos o servicios no tienen presencia en línea?</Description>
