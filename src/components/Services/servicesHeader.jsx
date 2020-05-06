@@ -10,7 +10,7 @@ const ServicesHeader = (props) => {
         <Title variant='h1'>TU PROYECTO </Title>
         <Box>
           <CircleSteep>1</CircleSteep>
-          Platicanos tu proyecto en una junta virtual.
+          Platícanos tu proyecto en una junta virtual.
         </Box>
         <Box>
         <CircleSteep>2</CircleSteep>
@@ -21,7 +21,7 @@ const ServicesHeader = (props) => {
         <LatestCircleSteep>
           <StarIconMaterial />
         </LatestCircleSteep>
-          Realizamos tu proyecto en tiempo record
+          Realizamos tu proyecto en tiempo récord.
           <VerticalLine />
         </Box>
       </Content>
