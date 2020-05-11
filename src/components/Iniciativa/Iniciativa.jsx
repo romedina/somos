@@ -5,6 +5,7 @@ import MobileStepper from '@material-ui/core/MobileStepper';
 import Button from '@material-ui/core/Button';
 import { iniciativaStyles } from '../../styles/styles';
 import { typeCSBold, typeRockSalt } from '../../styles/typeTheme';
+import { styled } from '@material-ui/core/styles'
 
 const useStyles = makeStyles({
     root: {
@@ -13,6 +14,13 @@ const useStyles = makeStyles({
     },
     ...iniciativaStyles
 });
+
+const BodyText = styled(Typography)({
+    lineHeight: '1.8em',
+    '@media screen and (max-width: 500px)': {
+        fontSize: '1.2rem',
+    }
+})
 
 const screenText = [
     'Construimos herramientas digitales para emprendedores, profesionistas y pymes con la finalidad de ayudarles a sostener sus ingresos y no depender de la venta presencial. Cada proyecto lo diseñamos a la medida de cada cliente y de acuerdo a sus capacidades y solvencia económica.',
@@ -61,8 +69,8 @@ export function Iniciativa() {
                                 </ThemeProvider>
                             </Grid>
                             <Grid item xs={12} md={10}>
-                                <Box p={8}>
-                                    <Typography variant='h5'>{screenText[activeStep]}</Typography>
+                                <Box p={{md: 8, xs: 1}}>
+                                    <BodyText variant='h5'>{screenText[activeStep]}</BodyText>
                                 </Box>
                             </Grid>
                         </Grid>
@@ -127,7 +135,7 @@ export function Iniciativa() {
     return (
         <React.Fragment>
             <div id='iniciativa'>
-                <Box minHeight={'80vh'} pt={15}>
+                <Box pt={{xs: 8}} pb={{xs: 8}}>
                     <Grid container style={{ height: '100%' }} justify='center' alignItems='center'>
                         <Grid item xs={12}>
                             <Grid style={{ height: '100%' }} container justify='center' alignItems='center'>
@@ -160,7 +168,6 @@ export function Iniciativa() {
                     </Grid>
                 </Box>
             </div>
-
         </React.Fragment >
     );
 }
