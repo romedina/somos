@@ -27,7 +27,8 @@ export const landingStyles = {
         width: 50,
         height: 50,
         position: 'relative',
-        left: '50%',
+        margin: 'auto',
+        display: 'block',
         animation: '$topDown 1s infinite',
     },
     mainContainer: {
