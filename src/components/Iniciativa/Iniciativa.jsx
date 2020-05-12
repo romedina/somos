@@ -87,7 +87,6 @@ export function Iniciativa() {
   })
 
   const classes = useStyles();
-  const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
@@ -188,11 +187,11 @@ export function Iniciativa() {
       <Box pt={{xs: 8}} pb={{xs: 8}}>
         <Grid container style={{ height: '100%' }} justify='center' alignItems='center'>
           <Grid item xs={12}>
-            <Grid style={{ height: '100%' }} container justify='center' alignItems='center'>
+            <GridStyled style={{ height: '100%' }} container justify='center' alignItems='center'>
               <Grid item xs={11} md={8} lg={6}>
                 {renderScreen()}
               </Grid>
-            </Grid>
+            </GridStyled>
           </Grid>
           <Grid item xs={12}>
             <MobileStepper
@@ -225,4 +224,8 @@ const MobileStepper = styled(MobileStepperBase)({
   margin: 'auto',
   display: 'flex',
   justifyContent: 'center'
+})
+
+const GridStyled = styled(Grid)({
+  minHeight: '390px'
 })
