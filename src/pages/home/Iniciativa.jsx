@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Box, Typography, ThemeProvider, CssBaseline } from '@material-ui/core';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import MobileStepperBase from '@material-ui/core/MobileStepper';
 import Button from '@material-ui/core/ButtonBase';
 import { iniciativaStyles } from '../../styles/styles';

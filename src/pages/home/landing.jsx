@@ -3,7 +3,6 @@ import { Hidden, Grid, Typography, makeStyles, ThemeProvider, CssBaseline, Box }
 import { landingStyles } from '../../styles/styles'
 import { textOptions } from '../../constants/textOptions/textOptions';
 import { typeRockSalt, typeCSBold } from '../../styles/typeTheme';
-import { Header } from '../Header/header'
 import WhatsappIcon from '../../assets/whatsapp.svg';
 import DownArrow from '../../assets/downArrow.svg';
 
@@ -55,10 +54,6 @@ export const Landing = () => {
             <Box pb={2} className={classes.mainContainer}>
                 <Grid container justify='center' alignItems='flex-start'>
                     <Grid item xs={12}>
-                        <Header />
-                    </Grid>
-
-                    <Grid item xs={12}>
                         <Box height='70vh'>
                             <Grid container style={{ height: '100%' }} justify='center' alignItems='center'>
 
@@ -94,26 +89,6 @@ export const Landing = () => {
                                         <Typography className={classes.whiteFont} variant='h4'>)s</Typography>
                                     </ThemeProvider>
                                 </Hidden>
-                                {/* <Hidden mdUp>
-                                    <Grid item xs>
-                                        <ThemeProvider theme={typeCSBold}>
-                                            <CssBaseline />
-                                            <Typography align='right' className={classes.whiteFont} variant='h3'>som(</Typography>
-                                        </ThemeProvider>
-                                    </Grid>
-                                    <Grid item xs>
-                                        <ThemeProvider theme={typeRockSalt}>
-                                            <CssBaseline />
-                                            <Typography align='center' className={classes.whiteFont} variant='h5'>{currentWord}</Typography>
-                                        </ThemeProvider>
-                                    </Grid>
-                                    <Grid item xs>
-                                        <ThemeProvider theme={typeCSBold}>
-                                            <CssBaseline />
-                                            <Typography align='left' className={classes.whiteFont} variant='h3'>)s</Typography>
-                                        </ThemeProvider>
-                                    </Grid>
-                                </Hidden> */}
                             </Grid>
                         </Box>
                     </Grid>

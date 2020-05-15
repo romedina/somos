@@ -9,9 +9,7 @@ import { IconBullet } from '../../dumbComponents/IconBullet/iconBullet';
 const useStyles = makeStyles(benefitsStyles)
 
 export const Benefits = () => {
-
     const classes = useStyles();
-
     const renderBullets = () => {
         return (
             benefitsItems.map(element => {
