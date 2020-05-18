@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from './components/header'
 import Item from './components/item'
 import Container from '../../components/container'
 import { FullWhidthColor } from '../../components/main'
-import data from './data'
+import data from '../../portfolio/index'
 import styled from 'styled-components'
 
+
 const Portolio = props => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <Header />

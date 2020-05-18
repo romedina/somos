@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Item = props => {
   return (
     <Content fullWidth={props.fullWidth || false} as={props.id ? Link : 'div'} to={`/portfolio/${props.id}`}>
-      <Picture src={props.picture} />
+      <Picture src={props.thumb} />
       <Describe>
         <PrimaryText color='white' >{props.title}</PrimaryText>
         <PrimaryText color='#cdcdcd' >{props.type}</PrimaryText>

@@ -9,26 +9,25 @@ import { Text } from '../../components/main'
 const Proyect = props => {
 
   const { id } = props.match.params
-  const data = portfolio[id]
-  
+  const project = portfolio.filter(project => project.id === id)[0]
 
-  if (!data) return (<Redirect to='/' />)
+  if (!project) return (<Redirect to='/' />)
 
   return (
     <>
       <Container>
-        <Header title={data.title} />
+        <Header title={project.title} />
       </Container>
-      <PictureCover src={data.picture} />
+      <PictureCover src={project.picture} />
       <Container maxWidth='1000px'>
         <Flex>
-          <Icon src={data.icon} />
+          <Icon src={project.icon} />
           <Description>
-            {data.description.map((item, index) => (<Text key={index}>{item}</Text>))}
+            {project.description.map((item, index) => (<Text key={index}>{item}</Text>))}
           </Description>
         </Flex>
         <PictureContainer>
-          {data.pictures.map((pic, index) => (
+          {project.pictures.map((pic, index) => (
             <Figure {...pic} key={index}>
               <PictureCover {...pic} />
             </Figure>
