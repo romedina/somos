@@ -5,7 +5,7 @@ import ServicesBody from './servicesBody'
 export function Services() {
   return (
     <Fragment>
-      <ServicesHeader  />
+      <ServicesHeader />
       <ServicesBody />
     </Fragment>
   )

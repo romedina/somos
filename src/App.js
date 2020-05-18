@@ -8,6 +8,8 @@ import Footer from './components/Footer/footer'
 
 // pages
 import Home from './pages/home'
+import Portfolio from './pages/portfolio'
+import Project from './pages/project'
 
 // google analitycs
 ReactGA.initialize('UA-162708338-1')
@@ -20,6 +22,8 @@ function App() {
         <CssBaseline />
         <Header />
         <Switch>
+          <Route path='/portfolio' exact component={Portfolio} />
+          <Route path='/portfolio/:id' exact component={Project} />
           <Route component={Home} />
         </Switch>
         <Footer />

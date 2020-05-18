@@ -5,7 +5,7 @@ import StarIconMaterial from '@material-ui/icons/Star';
 
 const ServicesHeader = (props) => {
   return (
-    <Container>
+    <Container id='yourproject'>
       <Content>
         <Title variant='h1'>TU PROYECTO </Title>
         <Box>
@@ -38,7 +38,7 @@ const Title = styled(Typography)({
   textAlign: 'left',
   marginBottom: '80px',
   fontWeight: 'bold',
-  ['@media screen and (max-width:700px)']: {
+  '@media screen and (max-width:700px)': {
     fontSize: '2em',
     textAlign: 'center'
   }
@@ -60,7 +60,7 @@ const Content = styled('div')({
   fontSize: '1.4em',
   fontFamily: 'CircularStdBook, Arial',
   flexWrap: "wrap",
-  ['@media screen and (max-width:700px)']: {
+  '@media screen and (max-width:700px)': {
     paddingLeft: '40px'
   }
 
@@ -75,7 +75,7 @@ const Box = styled('div')({
   position: 'relative',
   borderLeft: '1px solid #fff',
   borderBottom: '1px solid #fff',
-  ['@media screen and (max-width:700px)']: {
+  '@media screen and (max-width:700px)': {
     borderBottom: 'none',
     width: '100%',
     paddingLeft: '40px',
@@ -102,7 +102,7 @@ const CircleSteep = styled('div')({
   alignItems: "center",
   fontSize: "1.3em",
   fontWeight: 'bold',
-  ['@media screen and (max-width:700px)']: {
+  '@media screen and (max-width:700px)': {
     width: "50px",
     height: "50px",
     top: '0px',
@@ -112,7 +112,7 @@ const CircleSteep = styled('div')({
 
 const LatestCircleSteep = styled(CircleSteep)({
   display: 'none',
-  ['@media screen and (max-width:700px)']: {
+  '@media screen and (max-width:700px)': {
     display: 'flex',
     bottom: '-10px!important',
     top: 'auto',
@@ -125,7 +125,7 @@ const VerticalLine = styled('div')({
   borderLeft: "1px solid #fff",
   right: "0",
   bottom: "-71px",
-  ['@media screen and (max-width:700px)']: {
+  '@media screen and (max-width:700px)': {
     display: 'none'
   }
 
